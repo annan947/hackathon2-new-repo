@@ -18,7 +18,7 @@ static void DrawWrappedDescription(string text, int x, int y,
         newLine += word;
 
         if (line != "" && MeasureText(newLine.c_str(), size) > maxWidth) {
-            // .c_str() provides the C-style string required by raylib's DrawText.
+            // using .c_str() here because Raylib requires it for drawtext function
             DrawText(line.c_str(), x, y, size, color);
             y += size + 7;
             line = word;
