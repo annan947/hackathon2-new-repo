@@ -51,7 +51,6 @@ int FindHoveredTopic(float x, float y) {
 int main() {
     vector<topics> allTopics = setTopics();
 
-    // Original terminal introduction, preserved.
     cout << "Welcome to \"Early Computer Games\" Digital Tour!" << endl << endl;
     wait(1.5);
     cout << "Please give the name we can refer you by..." << endl;
