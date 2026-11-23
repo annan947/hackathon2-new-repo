@@ -53,11 +53,8 @@ static void DrawTopicPopup(const topics& topic, Texture2D image, int selectedTop
             image.width * factor,
             image.height * factor
         };
-        DrawTexturePro(image, {0, 0, (float)image.width, (float)image.height},
-                       dest, {0, 0}, 0.0f, WHITE);
-    } else {
-        DrawText("Image missing", 330, 270, 25, RED);
-    }
+        DrawTexturePro(image, {0, 0, (float)image.width, (float)image.height}, dest, {0, 0}, 0.0f, WHITE);
+    } 
 
     DrawText("ABOUT THIS TOPIC", 143, 455, 23, DARKBLUE);
     DrawWrappedDescription(topic.getInfo(), 143, 489, 606, 19, DARKGRAY);
